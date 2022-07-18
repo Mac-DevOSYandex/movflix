@@ -21,3 +21,36 @@ pnpm create next-app --example with-tailwindcss with-tailwindcss-app
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+---
+
+### Problems
+
+The following rules are considered problems for @commitlint/config-conventional and will yield a non-zero exit code when not met.
+
+Consult docs/rules for a list of available rules.
+
+type-enum
+condition: type is found in value
+
+rule: always
+
+level: error
+
+value
+
+```
+[
+  'build',
+  'chore',
+  'ci',
+  'docs',
+  'feat',
+  'fix',
+  'perf',
+  'refactor',
+  'revert',
+  'style',
+  'test'
+];
+```
