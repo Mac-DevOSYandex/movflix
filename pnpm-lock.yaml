@@ -9,6 +9,7 @@ specifiers:
   '@mantine/hooks': ^4.2.12
   '@mantine/next': ^4.2.12
   '@mdx-js/mdx': ^2.1.2
+  '@mdx-js/react': ^2.1.2
   '@mui/icons-material': ^5.8.4
   '@mui/lab': 5.0.0-alpha.90
   '@mui/material': ^5.9.0
@@ -79,6 +80,7 @@ dependencies:
   '@mantine/hooks': 4.2.12_react@18.1.0
   '@mantine/next': 4.2.12_iouxht5gwe3krvvbwhhbdrt744
   '@mdx-js/mdx': 2.1.2
+  '@mdx-js/react': 2.1.2_react@18.1.0
   '@mui/icons-material': 5.8.4_l447qkghujngv5tajmueznopwy
   '@mui/lab': 5.0.0-alpha.90_gz4q2s74gvyl2b7xt6xyxzghvq
   '@mui/material': 5.9.0_jyki25sdwj27sagwbllhb6blo4
@@ -960,6 +962,16 @@ packages:
       vfile: 5.3.4
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /@mdx-js/react/2.1.2_react@18.1.0:
+    resolution: {integrity: sha512-52e3DTJBrjsw3U51ZCdZ3N1IBaqnbzLIngCSXpKtiYiGr7PIqp3/P/+kym0MPTwBL/y9ZBmCieD8FyrXuEDrRw==}
+    peerDependencies:
+      react: '>=16'
+    dependencies:
+      '@types/mdx': 2.0.2
+      '@types/react': 18.0.15
+      react: 18.1.0
     dev: false
 
   /@motionone/animation/10.12.0:
