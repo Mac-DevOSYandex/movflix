@@ -24,33 +24,33 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 
 ---
 
+### Semantic Versioning
+
+Conventional Commit matches SemVer through type in the commit message. Automated versioning tooling also relies on it to decide the new version for source code. With the following convention:
+
+fix: a commit of the (bug)fix type is equal to PATCH in the SemVer.
+feat: a commit of type feature is equal to MINOR in the SemVer.
+Also, the keyword BREAKING CHANGE in the body section of the commit message will imply that this commit has a modification that makes the code no longer compatible with the previous version. Like changing the response structure of an API, the handle response part of the previous structure will of course no longer be accurate, and now we need to create an entirely new version by bumping MAJOR SemVer version.
+Some common type uses include:
+
+- feat: a new feature for the user, not a new feature for a script
+- `build` After a build
+- `fix`: bug fix for the user, not a fix to a build scripts
+- `refactor`: refactoring production code
+- `revert`: Revert to previous version...
+- `chore`: updating gulp tasks etc.; no production code change
+- 'ci': Continuous integration
+- `docs`: changes to documentation
+- `style`: formatting, missing semicolons, etc.; no code change
+- `perf`: code improved in terms of processing performance
+- `vendor`: update version for dependencies, packages.
+- `test`: adding missing tests, refactoring tests; no production code change
+- `up` upgrade to latest version and/or including code change
+
+While these are the most common types that you're going to see in the wild, nothing is stopping you from creating your own types of commits.
+
 ### Problems
 
 The following rules are considered problems for @commitlint/config-conventional and will yield a non-zero exit code when not met.
 
 Consult docs/rules for a list of available rules.
-
-type-enum
-condition: type is found in value
-
-rule: always
-
-level: error
-
-value
-
-```
-[
-  'build',
-  'chore',
-  'ci',
-  'docs',
-  'feat',
-  'fix',
-  'perf',
-  'refactor',
-  'revert',
-  'style',
-  'test'
-];
-```

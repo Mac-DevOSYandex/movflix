@@ -7,7 +7,7 @@ const Header = () => {
     <header className="">
       <div className="flex items-center space-x-2 md:space-x-10">
         <Image
-          src="http://localhost:8080/image/logo-text.png"
+          src="http://localhost:8080/image/logo-light-text.png"
           width={100}
           height={100}
           className="cursor-pointer object-contain"
@@ -30,7 +30,7 @@ const Header = () => {
         <Link href="/account" passHref>
           <a>
             <Image
-              src="http://localhost:8080/image/logo-icon.png"
+              src="http://localhost:8080/image/logo-light-icon.png"
               width={30}
               height={30}
               className="cursor-pointer object-contain"

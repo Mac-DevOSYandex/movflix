@@ -5,7 +5,7 @@
 /* Html, Body, Heading */
 @layer base {
   body {
-    @apply bg-[#141414] text-white min-h-screen;
+    @apply bg-[#272730] text-white min-h-screen;
   }
 }
 
@@ -15,6 +15,13 @@
     @apply text-[#e5e5e5] font-light text-sm cursor-pointer transition duration-[0.5s] hover:text-[#b3b3b3];
   }
 }
+
+/*
+--color-grey1: 81 86 88
+--color-grey2: 69 69 72
+--color-grey3: 108 113 115
+
+*/
 
 /* :root {
   --color-sky: 14 165 233;

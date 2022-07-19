@@ -1,8 +1,10 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
+import { ReactElement } from 'react';
 import Header from '../components/Header';
+import SiteLayout from '../layouts/layout';
 
-const Home: NextPage = () => {
+export default function Home() {
   return (
     <div className="">
       <Head>
@@ -25,6 +27,8 @@ const Home: NextPage = () => {
       </main>
     </div>
   );
-};
+}
 
-export default Home;
+Home.getLayout = function getLayout(page: ReactElement) {
+  return <SiteLayout>{page}</SiteLayout>;
+};
