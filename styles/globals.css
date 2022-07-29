@@ -16,7 +16,7 @@
 /* Html, Body, Heading */
 @layer base {
   body {
-    @apply bg-[#272a30] text-white;
+    @apply bg-primary text-white;
   }
 
   header {
