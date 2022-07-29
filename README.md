@@ -172,3 +172,10 @@ ReferenceError: document is not defined
     at Module.require (node:internal/modules/cjs/loader:1005:19)
     at require (node:internal/modules/cjs/helpers:102:18)
 ```
+
+
+> Redux 
+
+```
+pnpm add next-redux-wrapper react-redux redux redux-devtools-extension redux-thunk
+```
