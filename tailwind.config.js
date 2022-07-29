@@ -21,7 +21,8 @@ module.exports = {
         bloc: ['Portico', 'Impact', 'sans-serif'],
       },
       colors: {
-        brand: 'rgb(var(--brand-color) / <alpha-value>)',
+        "primary": "#272a30",
+        "brand": 'rgb(var(--brand-color) / <alpha-value>)',
       },
     },
   },
