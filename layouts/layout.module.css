@@ -1,9 +1,13 @@
-.main {
+/* .main {
   display: flex;
   height: calc(100vh - 64px);
-  /* background-color: white; */
+  background-color: theme(colors.rose.500);
 }
 
 .main > section {
   padding: 32px;
 }
+
+:root {
+  --rs-picker-value: theme(colors.slate.900);
+} */

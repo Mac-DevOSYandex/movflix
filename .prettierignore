@@ -1,0 +1,14 @@
+# Add files here to ignore them from prettier formatting
+
+# compiled output
+/dist
+/coverage
+/tmp
+/out-tsc
+
+# dependencies
+node_modules
+
+# Config files
+.pnpm
+.next

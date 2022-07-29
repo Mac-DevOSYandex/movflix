@@ -1,12 +1,12 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
 import { ReactElement } from 'react';
-import Header from '../components/Header';
+import Header from '../components/header/Header';
 import SiteLayout from '../layouts/layout';
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="relative h-screen">
       <Head>
         <title>Home | Netflix</title>
         <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
@@ -29,6 +29,7 @@ export default function Home() {
   );
 }
 
-Home.getLayout = function getLayout(page: ReactElement) {
-  return <SiteLayout>{page}</SiteLayout>;
-};
+// Home.getLayout = function getLayout(page: ReactElement) {
+//   return <SiteLayout>{page}</SiteLayout>;
+// };
+

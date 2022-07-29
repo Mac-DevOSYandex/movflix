@@ -1,3 +1,14 @@
+:root {
+  --color-gray: 39 39 48;
+  --color-sky: 14 165 233;
+  --color-purple: 168 85 247;
+  --color-pink: 237 72 153;
+  --color-emerald: 20 184 166;
+  --color-orange: 249 115 22;
+}
+
+--brand-color: var(--color-sky);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,14 +16,21 @@
 /* Html, Body, Heading */
 @layer base {
   body {
-    @apply bg-[#272730] text-white min-h-screen;
+    @apply bg-[#272a30] text-white;
+  }
+
+  header {
+    @apply fixed top-0 z-50 flex w-[100%] items-center justify-between transition-all px-4 py-4 lg:px-10 lg:py-6;
   }
 }
 
 /* Custom className */
 @layer components {
-  .headerLink {
-    @apply text-[#e5e5e5] font-light text-sm cursor-pointer transition duration-[0.5s] hover:text-[#b3b3b3];
+  .header-link {
+    @apply text-[#e5e5e5] font-light text-base cursor-pointer transition duration-[0.4s] hover:text-[#b3b3b3];
+  }
+  .nav-link {
+    @apply  text-gray-200 hover:text-gray-500 focus:text-gray-500 p-0 transition duration-[0.5s];
   }
 }
 
