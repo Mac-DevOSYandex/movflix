@@ -1,10 +1,14 @@
 :root {
-  --color-gray: 39 39 48;
+  /* --color-gray: 39 39 48; */
+  --color-gray: 34 37 39;
   --color-sky: 14 165 233;
   --color-purple: 168 85 247;
   --color-pink: 237 72 153;
   --color-emerald: 20 184 166;
   --color-orange: 249 115 22;
+  --primary-color: rgb(34, 37, 39);
+  --secondary-color: rgb(126, 49, 185);
+  --tertiary-color: rgb(69, 28, 184);
 }
 
 --brand-color: var(--color-sky);
@@ -16,7 +20,7 @@
 /* Html, Body, Heading */
 @layer base {
   body {
-    @apply bg-primary text-white;
+    @apply bg-primary text-white !scrollbar-w-1 !scrollbar-track-transparent !scrollbar-thumb-purple-600;
   }
 
   header {
@@ -30,7 +34,7 @@
     @apply text-[#e5e5e5] font-light text-base cursor-pointer transition duration-[0.4s] hover:text-[#b3b3b3];
   }
   .nav-link {
-    @apply  text-gray-200 hover:text-gray-500 focus:text-gray-500 p-0 transition duration-[0.5s];
+    @apply text-gray-200 hover:text-gray-500 focus:text-gray-500 p-0 transition duration-[0.5s];
   }
 }
 

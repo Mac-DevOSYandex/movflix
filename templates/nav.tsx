@@ -1,4 +1,4 @@
-import { BellIcon, MenuIcon, ShoppingCartIcon } from '@heroicons/react/solid';
+import { BellIcon, MenuIcon, ShoppingCartIcon, SearchIcon } from '@heroicons/react/solid';
 import Image from 'next/image'
 // import '../styles/nav.module.css';
 
@@ -12,7 +12,7 @@ const Nav = () => {
     flex flex-wrap
     items-center
     justify-between
-    py-4
+    py-0
     text-gray-300
     hover:text-gray-700
     focus:text-gray-700
@@ -74,8 +74,83 @@ const Nav = () => {
         <div className="flex items-center relative">
           {/* <!-- Icon --> */}
           <a className="text-gray-100 hover:text-gray-300 focus:text-gray-300 mr-4" href="#">
-            <ShoppingCartIcon className='w-6 h-6' />
+            <SearchIcon className='w-6 h-6' />
           </a>
+          <div className="dropdown relative">
+            <a className="dropdown-toggle flex items-center hidden-arrow mr-4" href="#" id="dropdownMenuButton2" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <Image src="http://localhost:8080/netflix/logo/Account.png" className="rounded-md"
+                height={25} width={25} alt="Avatar" loading="lazy" />
+            </a>
+
+            <ul className="
+      dropdown-menu
+      min-w-max
+      absolute
+      hidden
+      bg-white
+      text-base
+      z-50
+      float-left
+      py-2
+      list-none
+      text-left
+      rounded-lg
+      shadow-lg
+      mt-1
+      m-0
+      bg-clip-padding
+      border-none
+      left-auto
+      right-0
+    " aria-labelledby="dropdownMenuButton2">
+              <li>
+                <a className="
+          dropdown-item
+          text-sm
+          py-2
+          px-4
+          font-normal
+          block
+          w-full
+          whitespace-nowrap
+          bg-transparent
+          text-gray-700
+          hover:bg-gray-100
+        " href="#">Action</a>
+              </li>
+              <li>
+                <a className="
+          dropdown-item
+          text-sm
+          py-2
+          px-4
+          font-normal
+          block
+          w-full
+          whitespace-nowrap
+          bg-transparent
+          text-gray-700
+          hover:bg-gray-100
+        " href="#">Another action</a>
+              </li>
+              <li>
+                <a className="
+          dropdown-item
+          text-sm
+          py-2
+          px-4
+          font-normal
+          block
+          w-full
+          whitespace-nowrap
+          bg-transparent
+          text-gray-700
+          hover:bg-gray-100
+        " href="#">Something else here</a>
+              </li>
+            </ul>
+          </div>
           <div className="dropdown relative">
             <a className="
             text-gray-100
@@ -154,81 +229,6 @@ const Nav = () => {
             text-gray-700
             hover:bg-gray-100
           " href="#">Something else here</a>
-              </li>
-            </ul>
-          </div>
-          <div className="dropdown relative">
-            <a className="dropdown-toggle flex items-center hidden-arrow mr-4" href="#" id="dropdownMenuButton2" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              <Image src="http://localhost:8080/netflix/logo/Account.png" className="rounded-md"
-                height={25} width={25} alt="Avatar" loading="lazy" />
-            </a>
-
-            <ul className="
-      dropdown-menu
-      min-w-max
-      absolute
-      hidden
-      bg-white
-      text-base
-      z-50
-      float-left
-      py-2
-      list-none
-      text-left
-      rounded-lg
-      shadow-lg
-      mt-1
-      m-0
-      bg-clip-padding
-      border-none
-      left-auto
-      right-0
-    " aria-labelledby="dropdownMenuButton2">
-              <li>
-                <a className="
-          dropdown-item
-          text-sm
-          py-2
-          px-4
-          font-normal
-          block
-          w-full
-          whitespace-nowrap
-          bg-transparent
-          text-gray-700
-          hover:bg-gray-100
-        " href="#">Action</a>
-              </li>
-              <li>
-                <a className="
-          dropdown-item
-          text-sm
-          py-2
-          px-4
-          font-normal
-          block
-          w-full
-          whitespace-nowrap
-          bg-transparent
-          text-gray-700
-          hover:bg-gray-100
-        " href="#">Another action</a>
-              </li>
-              <li>
-                <a className="
-          dropdown-item
-          text-sm
-          py-2
-          px-4
-          font-normal
-          block
-          w-full
-          whitespace-nowrap
-          bg-transparent
-          text-gray-700
-          hover:bg-gray-100
-        " href="#">Something else here</a>
               </li>
             </ul>
           </div>

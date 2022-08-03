@@ -1,0 +1,10 @@
+/* .chevronL {
+  @apply absolute top-0 bottom-0 left-2 z-40 m-auto h-9 w-9 cursor-pointer opacity-0 transition hover:scale-125 group-hover:opacity-100;
+} */
+.chevron {
+  @apply right-2  rounded-full bg-white text-slate-700 shadow-lg absolute top-0 bottom-0 z-40 m-auto h-9 w-9 cursor-pointer opacity-0 transition hover:scale-125 group-hover:opacity-100;
+}
+
+.title {
+  @apply w-56 text-sm cursor-pointer font-semibold text-lightgrey transition duration-200 hover:text-white md:text-2xl;
+}

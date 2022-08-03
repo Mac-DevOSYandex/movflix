@@ -1,0 +1,11 @@
+.banner {
+  @apply flex flex-col space-y-2 py-16 md:space-y-4 lg:h-[65vh] lg:justify-end lg:pb-12;
+}
+
+.bannerImg-wrapper {
+  @apply absolute top-0 left-0 w-screen h-[95vh] object-cover -z-10;
+}
+
+.banner-button {
+  @apply flex items-center gap-x-2 rounded px-5 py-1.5 text-sm font-semibold transition hover:opacity-75 md:py-2.5 md:px-8 md:text-xl;
+}

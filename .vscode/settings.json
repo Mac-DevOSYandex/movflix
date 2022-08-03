@@ -22,10 +22,7 @@
 
   // "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": [
-    "source.addMissingImports",
-    "source.fixAll.eslint"
-  ],
+  "editor.codeActionsOnSave": ["source.addMissingImports", "source.fixAll.eslint"],
 
   "scss.validate": false,
   "css.validate": false,
@@ -39,7 +36,10 @@
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsx-tags]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "better-comments.tags": [
     {

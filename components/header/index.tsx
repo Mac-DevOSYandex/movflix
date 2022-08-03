@@ -9,7 +9,7 @@ const Header = () => {
   const [ isScrolled, setIsScrolled ] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = (): void => {
       if (window.scrollY > 0) {
         setIsScrolled(true)
       } else {
@@ -24,8 +24,8 @@ const Header = () => {
   }, [])
 
   return (
-    <header className={`${isScrolled && 'bg-[#272a30]' } shadow-lg`}>
-     <Nav/>
+    <header className={`${isScrolled && 'bg-primary shadow-lg'}`}>
+      <Nav />
     </header>
   );
 };
